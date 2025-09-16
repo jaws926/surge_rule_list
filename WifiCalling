@@ -1,4 +1,4 @@
-#
+# 源链接 https://github.com/gujiangjiang/Wi-Fi-Calling-Ruleset-for-Clash/blob/main/Wi-Fi_Calling.yaml
 # Wi-Fi Calling Ruleset for Clash (Enhanced Version)
 #
 # Maintainer: Gemini
@@ -6,121 +6,121 @@
 #
 # 此规则集旨在解决大部分境外运营商Wi-Fi Calling在特殊网络环境下的连接问题。
 # 结合了社区贡献和运营商的公开网络信息。
-  # --- 核心与通用规则 (所有运营商通用，必须保留) ---
-  # 3GPP标准域名，用于服务发现
-  - 'DOMAIN-SUFFIX,3gppnetwork.org'
-  # 苹果设备地区/服务检测，对iPhone用户尤其重要
-  - 'DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com'
+# --- 核心与通用规则 (所有运营商通用，必须保留) ---
+# 3GPP标准域名，用于服务发现
+DOMAIN-SUFFIX,3gppnetwork.org
+# 苹果设备地区/服务检测，对iPhone用户尤其重要
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
 
-  # --- 美国 (USA) ---
-  # T-Mobile / Sprint / Google Fi / Ultra Mobile / Mint Mobile 等 T-Mobile系
-  - 'DOMAIN-KEYWORD,t-mobile'
-  - 'DOMAIN-KEYWORD,ultramobile'
-  - 'DOMAIN-SUFFIX,crl.t-mobile.com'
-  - 'DOMAIN-SUFFIX,eas3.msg.t-mobile.com'
-  - 'DOMAIN-SUFFIX,mascns.t-mobile.com'
-  - 'DOMAIN-SUFFIX,ns.sipgeo.t-mobile.com'
-  - 'DOMAIN-SUFFIX,optimizely.com' # T-Mobile US使用的A/B测试和功能开关服务
-  - 'DOMAIN-SUFFIX,redirect.ultra.me'
-  - 'DOMAIN-SUFFIX,ultramobile.com'
-  # T-Mobile ePDG
-  - 'DOMAIN-SUFFIX,depdg.epc.mnc260.mcc310.pub.3gppnetwork.org'
-  - 'DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org'
-  - 'DOMAIN-SUFFIX,epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org'
-  # - 'DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org'
-  - 'IP-CIDR,66.94.0.0/19'
-  - 'IP-CIDR,208.54.0.0/16'
-  - 'IP-CIDR,206.29.177.36/32' # 新增IP
-  # AT&T
-  - 'DOMAIN-KEYWORD,att'
-  - 'DOMAIN-SUFFIX,vowifi.net'
-  - 'IP-CIDR,129.192.0.0/16'
-  # Verizon
-  - 'DOMAIN-KEYWORD,verizon'
-  - 'DOMAIN-SUFFIX,vzw.com'
-  - 'IP-CIDR,69.78.0.0/16'
+# --- 美国 (USA) ---
+# T-Mobile / Sprint / Google Fi / Ultra Mobile / Mint Mobile 等 T-Mobile系
+DOMAIN-KEYWORD,t-mobile
+DOMAIN-KEYWORD,ultramobile
+DOMAIN-SUFFIX,crl.t-mobile.com
+DOMAIN-SUFFIX,eas3.msg.t-mobile.com
+DOMAIN-SUFFIX,mascns.t-mobile.com
+DOMAIN-SUFFIX,ns.sipgeo.t-mobile.com
+DOMAIN-SUFFIX,optimizely.com
+DOMAIN-SUFFIX,redirect.ultra.me
+DOMAIN-SUFFIX,ultramobile.com
+# T-Mobile ePDG
+DOMAIN-SUFFIX,depdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+IP-CIDR,66.94.0.0/19
+IP-CIDR,208.54.0.0/16
+IP-CIDR,206.29.177.36/32
+# AT&T
+DOMAIN-KEYWORD,att
+DOMAIN-SUFFIX,vowifi.net
+IP-CIDR,129.192.0.0/16
+# Verizon
+DOMAIN-KEYWORD,verizon
+DOMAIN-SUFFIX,vzw.com
+IP-CIDR,69.78.0.0/16
 
-  # --- 英国 (United Kingdom) ---
-  # EE / CMLink UK (使用EE网络)
-  - 'DOMAIN-SUFFIX,ee.co.uk'
-  - 'IP-CIDR,46.68.0.0/17' # CMLink UK
-  # Vodafone (沃达丰) / VOXI (子品牌)
-  - 'DOMAIN-SUFFIX,vodafone.co.uk'
-  - 'DOMAIN-SUFFIX,entsrv-uk.vodafone.com'
-  - 'DOMAIN-SUFFIX,vuk-gto.prod.ondemandconnectivity.com'
-  - 'DOMAIN-SUFFIX,epdg.epc.mnc015.mcc234.pub.3gppnetwork.org'
-  - 'DOMAIN-SUFFIX,ss.epdg.epc.mnc015.mcc234.pub.3gppnetwork.org'
-  - 'DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc015.mcc234.pub.3gppnetwork.org'
-  - 'IP-CIDR,88.82.0.0/19' # Vodafone UK
-  - 'IP-CIDR,148.252.160.0/19' # VOXI
-  # O2 / Giffgaff (使用O2网络)
-  - 'DOMAIN-SUFFIX,o2.co.uk'
-  - 'DOMAIN-SUFFIX,giffgaff.com'
-  - 'DOMAIN-SUFFIX,epdg.epc.mnc010.mcc234.pub.3gppnetwork.org'
-  - 'IP-CIDR,87.194.0.0/16' # Giffgaff
-  # Three UK (3UK)
-  - 'DOMAIN-SUFFIX,three.co.uk'
-  - 'DOMAIN-SUFFIX,epdg.epc.mnc020.mcc234.pub.3gppnetwork.org'
-  - 'IP-CIDR,185.153.236.0/22'
-  - 'IP-CIDR,185.153.237.0/24'
+# --- 英国 (United Kingdom) ---
+# EE / CMLink UK (使用EE网络)
+DOMAIN-SUFFIX,ee.co.uk
+IP-CIDR,46.68.0.0/17' # CMLink UK
+# Vodafone (沃达丰) / VOXI (子品牌)
+DOMAIN-SUFFIX,vodafone.co.uk
+DOMAIN-SUFFIX,entsrv-uk.vodafone.com
+DOMAIN-SUFFIX,vuk-gto.prod.ondemandconnectivity.com
+DOMAIN-SUFFIX,epdg.epc.mnc015.mcc234.pub.3gppnetwork.org
+DOMAIN-SUFFIX,ss.epdg.epc.mnc015.mcc234.pub.3gppnetwork.org
+DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc015.mcc234.pub.3gppnetwork.org
+IP-CIDR,88.82.0.0/19
+IP-CIDR,148.252.160.0/19
+# O2 / Giffgaff (使用O2网络)
+DOMAIN-SUFFIX,o2.co.uk
+DOMAIN-SUFFIX,giffgaff.com
+DOMAIN-SUFFIX,epdg.epc.mnc010.mcc234.pub.3gppnetwork.org
+IP-CIDR,87.194.0.0/16
+# Three UK (3UK)
+DOMAIN-SUFFIX,three.co.uk
+DOMAIN-SUFFIX,epdg.epc.mnc020.mcc234.pub.3gppnetwork.org
+IP-CIDR,185.153.236.0/22
+IP-CIDR,185.153.237.0/24
 
-  # --- 香港 (Hong Kong) ---
-  # CSL / 1O1O / Club SIM / Lucky SIM
-  - 'DOMAIN-SUFFIX,ondemandconnectivity.com' # eSIM服务管理
-  - 'DOMAIN-SUFFIX,hkcsl.com'
-  - 'DOMAIN-SUFFIX,epdg.epc.mnc000.mcc454.pub.3gppnetwork.org' # CSL ePDG
-  - 'IP-CIDR,203.186.96.0/22' # PCCW/CSL
-  # 3HK
-  - 'DOMAIN-SUFFIX,three.com.hk'
-  - 'DOMAIN-SUFFIX,wlan.three.com.hk'
-  # SmarTone (数码通)
-  - 'DOMAIN-SUFFIX,smartone.com'
-  # China Mobile HK (CMHK)
-  - 'DOMAIN-SUFFIX,hk.chinamobile.com'
-  - 'DOMAIN,epdg.ims.mnc454.mcc12.pub.3gppnetwork.org' # CMHK ePDG Host
+# --- 香港 (Hong Kong) ---
+# CSL / 1O1O / Club SIM / Lucky SIM
+DOMAIN-SUFFIX,ondemandconnectivity.com
+DOMAIN-SUFFIX,hkcsl.com
+DOMAIN-SUFFIX,epdg.epc.mnc000.mcc454.pub.3gppnetwork.org
+IP-CIDR,203.186.96.0/22
+# 3HK
+DOMAIN-SUFFIX,three.com.hk
+DOMAIN-SUFFIX,wlan.three.com.hk
+# SmarTone (数码通)
+DOMAIN-SUFFIX,smartone.com
+# China Mobile HK (CMHK)
+DOMAIN-SUFFIX,hk.chinamobile.com
+DOMAIN,epdg.ims.mnc454.mcc12.pub.3gppnetwork.org
 
-  # --- 加拿大 (Canada) ---
-  - 'DOMAIN-SUFFIX,rogers.com'
-  - 'DOMAIN-SUFFIX,bell.ca'
-  - 'DOMAIN-SUFFIX,telus.com'
-  - 'DOMAIN-SUFFIX,fido.ca' # Rogers子品牌
+# --- 加拿大 (Canada) ---
+DOMAIN-SUFFIX,rogers.com
+DOMAIN-SUFFIX,bell.ca
+DOMAIN-SUFFIX,telus.com
+DOMAIN-SUFFIX,fido.ca
 
-  # --- 日本 (Japan) ---
-  - 'DOMAIN-SUFFIX,docomo.ne.jp'
-  - 'DOMAIN-SUFFIX,softbank.jp'
-  - 'DOMAIN-SUFFIX,kddi.com'
+# --- 日本 (Japan) ---
+DOMAIN-SUFFIX,docomo.ne.jp
+DOMAIN-SUFFIX,softbank.jp
+DOMAIN-SUFFIX,kddi.com
 
-  # --- 韩国 (South Korea) ---
-  - 'DOMAIN-SUFFIX,skttelecom.com'
-  - 'DOMAIN-SUFFIX,kt.com'
-  - 'DOMAIN-SUFFIX,uplus.co.kr'
+# --- 韩国 (South Korea) ---
+DOMAIN-SUFFIX,skttelecom.com
+DOMAIN-SUFFIX,kt.com
+DOMAIN-SUFFIX,uplus.co.kr
 
-  # --- 台湾 (Taiwan) ---
-  - 'DOMAIN-SUFFIX,cht.com.tw'   # 中华电信
-  - 'DOMAIN-SUFFIX,taiwanmobile.com' # 台湾大哥大
-  - 'DOMAIN-SUFFIX,fetnet.net' # 远传电信
+# --- 台湾 (Taiwan) ---
+DOMAIN-SUFFIX,cht.com.tw
+DOMAIN-SUFFIX,taiwanmobile.com
+DOMAIN-SUFFIX,fetnet.net
 
-  # --- 澳大利亚 (Australia) ---
-  - 'DOMAIN-SUFFIX,telstra.com.au'
-  - 'DOMAIN-SUFFIX,optus.com.au'
-  - 'DOMAIN-SUFFIX,vodafone.com.au'
+# --- 澳大利亚 (Australia) ---
+DOMAIN-SUFFIX,telstra.com.au
+DOMAIN-SUFFIX,optus.com.au
+DOMAIN-SUFFIX,vodafone.com.au
 
-  # --- 新西兰 (New Zealand) ---
-  # One NZ (formerly Vodafone NZ)
-  - 'DOMAIN-SUFFIX,one.nz'
-  - 'DOMAIN-SUFFIX,epdg.epc.mnc01.mcc530.pub.3gppnetwork.org'
+# --- 新西兰 (New Zealand) ---
+# One NZ (formerly Vodafone NZ)
+DOMAIN-SUFFIX,one.nz
+DOMAIN-SUFFIX,epdg.epc.mnc01.mcc530.pub.3gppnetwork.org
 
-  # --- 新加坡 (Singapore) ---
-  - 'DOMAIN-SUFFIX,singtel.com'
-  - 'DOMAIN-SUFFIX,starhub.com'
-  - 'DOMAIN-SUFFIX,m1.com.sg'
+# --- 新加坡 (Singapore) ---
+DOMAIN-SUFFIX,singtel.com
+DOMAIN-SUFFIX,starhub.com
+DOMAIN-SUFFIX,m1.com.sg
 
-  # --- 欧洲主要运营商 (Major European Carriers) ---
-  # Orange (法国/西班牙等)
-  - 'DOMAIN-SUFFIX,orange.com'
-  - 'DOMAIN-SUFFIX,orange.fr'
-  # Telefonica (西班牙/德国O2/英国O2等)
-  - 'DOMAIN-SUFFIX,telefonica.com'
-  # Deutsche Telekom / T-Mobile DE (德国电信)
-  - 'DOMAIN-SUFFIX,telekom.de'
+# --- 欧洲主要运营商 (Major European Carriers) ---
+# Orange (法国/西班牙等)
+DOMAIN-SUFFIX,orange.com
+DOMAIN-SUFFIX,orange.fr
+# Telefonica (西班牙/德国O2/英国O2等)
+DOMAIN-SUFFIX,telefonica.com
+# Deutsche Telekom / T-Mobile DE (德国电信)
+DOMAIN-SUFFIX,telekom.de
 
