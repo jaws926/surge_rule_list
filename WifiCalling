@@ -1,8 +1,8 @@
 # 源链接 https://github.com/gujiangjiang/Wi-Fi-Calling-Ruleset-for-Clash/blob/main/Wi-Fi_Calling.yaml
 # Wi-Fi Calling Ruleset for Clash (Enhanced Version)
 #
-# Maintainer: Gemini
-# Last Updated: 2025-09-05
+# Maintainer: jaws
+# Last Updated: 2025-09-16
 #
 # 此规则集旨在解决大部分境外运营商Wi-Fi Calling在特殊网络环境下的连接问题。
 # 结合了社区贡献和运营商的公开网络信息。
@@ -23,7 +23,7 @@ DOMAIN-SUFFIX,ns.sipgeo.t-mobile.com
 DOMAIN-SUFFIX,optimizely.com
 DOMAIN-SUFFIX,redirect.ultra.me
 DOMAIN-SUFFIX,ultramobile.com
-OMAIN-SUFFIX,mintmobile.com
+DOMAIN-SUFFIX,mintmobile.com
 # T-Mobile ePDG
 DOMAIN-SUFFIX,depdg.epc.mnc260.mcc310.pub.3gppnetwork.org
 DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org
