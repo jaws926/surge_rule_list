@@ -1,20 +1,22 @@
 # NAME: 国内需要走代理的苹果服务
 # AUTHOR: Jaws926
 # Quote：【https://raw.githubusercontent.com/lucere30/MR/b2ca2839602e05807272b8a81028e24e39225542/lq/proxy.list】
-# UPDATED: 2025-09-19 16:50:30
-# DOMAIN：2
+# UPDATED: 2025-09-19 16:58:30
+# DOMAIN：3
 # DOMAIN-SUFFIX: 6
-# TOTAL: 8
-# 苹果安全更新需要
+# TOTAL: 9
+# 苹果安全更新
 DOMAIN,xp.apple.com
 DOMAIN-SUFFIX,mesu.apple.com
-# 苹果播客需要
+# 苹果播客
 DOMAIN-SUFFIX,podcasts.apple.com
 DOMAIN-SUFFIX,podcasts.itunes.apple.com
 DOMAIN-SUFFIX,bookkeeper.itunes.apple.com
 # 苹果的数字媒体商店和媒体库服务
 DOMAIN-SUFFIX,play.itunes.apple.com
-# 苹果词典服务需要
+# 苹果iCloud+私密转送服务
 DOMAIN-SUFFIX,apple-relay.apple.com
-# Apple Intelligence 登录 ChatGPT 需开启代理的域名
+# Apple Intelligence登录ChatGPT需开启代理的域名
 DOMAIN,gateway.icloud.com
+# 苹果新闻服务
+DOMAIN,news-assets.apple.com
