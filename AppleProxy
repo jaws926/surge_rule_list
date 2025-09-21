@@ -17,6 +17,6 @@ DOMAIN-SUFFIX,play.itunes.apple.com
 # 苹果iCloud+私密转送服务
 DOMAIN-SUFFIX,apple-relay.apple.com
 # Apple Intelligence登录ChatGPT需开启代理的域名
-DOMAIN,gateway.icloud.com
+# DOMAIN,gateway.icloud.com
 # 苹果新闻服务
 DOMAIN,news-assets.apple.com
