@@ -6,8 +6,8 @@
 # DOMAIN-SUFFIX: 6
 # TOTAL: 9
 # 苹果安全更新
-DOMAIN,xp.apple.com
-DOMAIN-SUFFIX,mesu.apple.com
+#DOMAIN,xp.apple.com
+#DOMAIN-SUFFIX,mesu.apple.com
 # 苹果播客
 DOMAIN-SUFFIX,podcasts.apple.com
 DOMAIN-SUFFIX,podcasts.itunes.apple.com
