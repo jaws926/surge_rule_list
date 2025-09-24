@@ -4,8 +4,8 @@
 # DOMAIN-SUFFIX: 15
 # TOTAL: 15
 DOMAIN-SUFFIX,ithome.com,ithome
-DOMAIN-SUFFIX,,ruanmei.com,ithome
-DOMAIN-SUFFIX,,lapin365.com,ithome
+DOMAIN-SUFFIX,ruanmei.com,ithome
+DOMAIN-SUFFIX,lapin365.com,ithome
 DOMAIN-SUFFIX,cmt.ithome.com
 DOMAIN-SUFFIX,api.ithome.com
 DOMAIN-SUFFIX,avatar.ithome.com
