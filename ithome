@@ -1,20 +1,20 @@
 # NAME: ithome
 # AUTHOR: Jaws926
 # UPDATED: 2025.09.24
-# HOST-SUFFIX: 15
+# DOMAIN-SUFFIX: 15
 # TOTAL: 15
-HOST-SUFFIX,ithome.com,ithome
-HOST-SUFFIX,ruanmei.com,ithome
-HOST-SUFFIX,lapin365.com,ithome
-HOST-SUFFIX,cmt.ithome.com
-HOST-SUFFIX,api.ithome.com
-HOST-SUFFIX,avatar.ithome.com
-HOST-SUFFIX,napi.ithome.com
-HOST-SUFFIX,qapi.ithome.com
-HOST-SUFFIX,chat.ithome.com
-HOST-SUFFIX,mp.ithome.com
-HOST-SUFFIX,img.ithome.com
-dat.ruanmei.com
-dyn.ithome.com
-myapi.ruanmei.com
-mall.ithome.com
+DOMAIN-SUFFIX,ithome.com,ithome
+DOMAIN-SUFFIX,,ruanmei.com,ithome
+DOMAIN-SUFFIX,,lapin365.com,ithome
+DOMAIN-SUFFIX,cmt.ithome.com
+DOMAIN-SUFFIX,api.ithome.com
+DOMAIN-SUFFIX,avatar.ithome.com
+DOMAIN-SUFFIX,napi.ithome.com
+DOMAIN-SUFFIX,qapi.ithome.com
+DOMAIN-SUFFIX,chat.ithome.com
+DOMAIN-SUFFIX,mp.ithome.com
+DOMAIN-SUFFIX,img.ithome.com
+DOMAIN-SUFFIX,dat.ruanmei.com
+DOMAIN-SUFFIX,dyn.ithome.com
+DOMAIN-SUFFIX,myapi.ruanmei.com
+DOMAIN-SUFFIX,mall.ithome.com
