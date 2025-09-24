@@ -4,9 +4,9 @@
 # DOMAIN-SUFFIX: 15
 # TOTAL: 15
 # 不定期更新
-DOMAIN-SUFFIX,ithome.com,ithome
-DOMAIN-SUFFIX,ruanmei.com,ithome
-DOMAIN-SUFFIX,lapin365.com,ithome
+DOMAIN-SUFFIX,ithome.com
+DOMAIN-SUFFIX,ruanmei.com
+DOMAIN-SUFFIX,lapin365.com
 DOMAIN-SUFFIX,cmt.ithome.com
 DOMAIN-SUFFIX,api.ithome.com
 DOMAIN-SUFFIX,avatar.ithome.com
@@ -15,6 +15,7 @@ DOMAIN-SUFFIX,qapi.ithome.com
 DOMAIN-SUFFIX,chat.ithome.com
 DOMAIN-SUFFIX,mp.ithome.com
 DOMAIN-SUFFIX,img.ithome.com
+DOMAIN-SUFFIX,pimg.ithome.com
 DOMAIN-SUFFIX,dat.ruanmei.com
 DOMAIN-SUFFIX,dyn.ithome.com
 DOMAIN-SUFFIX,myapi.ruanmei.com
